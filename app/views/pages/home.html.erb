@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="center">
+    <h1>Bienvenue sur le Portail des Producteurs d'Occitanie.</h1>
+    <p>Vous êtes ? </p>
+    <ul>
+      <li>GMS</li>
+      <li>Cuisine Collective</li>
+      <li>Restaurateur</li>
+    </ul>
+    <p>Une fois votre compte créer vous pouvez accedez à la Mercurial des produits
+    si vous vous inscrivez en tant que Client </p>
+
+    <p>Vous êtes ? </p>
+    <ul>
+      <li>Producteur</li>
+      <li>Transformateur</li>
+      <li>Institutionnel</li>
+    </ul>
+    <p>Une fois votre compte créer vous pouvez accedez au Forum et discutez avec
+    les acteurs de l'Association afin de partager vos idées. </p>
+
+    <p>Vous êtes ?</p>
+    <ul>
+      <li>Particulier</li>
+    </ul>
+    <p>Inscrivez vous et accédez à notre Newsletter pour rester informé de nos activitées.</p>
+    <%= link_to "Vous connectez", new_user_session_path %>
+  </div>
+</div>
+

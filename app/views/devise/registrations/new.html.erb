@@ -22,7 +22,7 @@
                 as: :select,
                 label: "Type d'utilisateur",
                 required: true,
-                collection: User.user_type
+                collection: User.user_types.symbolize_keys.keys
 
                 %>
 

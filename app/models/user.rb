@@ -3,7 +3,5 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  def self.user_type
-    ['Client', 'Membre']
-  end
+  enum user_type: { 'Client' => 0, 'Membre' => 1 }
 end
