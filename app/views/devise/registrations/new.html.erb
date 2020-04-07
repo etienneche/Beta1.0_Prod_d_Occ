@@ -19,10 +19,12 @@
                 input_html: { autocomplete: "Confirmer mot de passe" } %>
 
     <%= f.input :user_type,
+                as: :select,
                 label: "Type d'utilisateur",
                 required: true,
-                input_html: { autocomplete: "user_type" } %>
+                collection: User.user_type
 
+                %>
 
      </div>
 
